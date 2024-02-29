@@ -12,6 +12,9 @@ resource "aws_ecr_repository" "ecr" {
     encryption_type = "KMS"
   }
   force_delete = true
+  tags = {
+    yor_trace = "617daa49-ba0b-4691-afc3-0010415f250c"
+  }
 }
 
 resource "aws_ecr_lifecycle_policy" "ecr" {
